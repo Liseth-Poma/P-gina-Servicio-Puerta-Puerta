@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 - Transparent Navbar</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css" />
+    <style>
+        .banner-image {
+            background-image: url('img/covers.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a class="navbar-brand" href="principal.html">
+                <img src="img\logo.png" style="height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mx-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="principal.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Servicios.html">Nuestros Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Banner Image  -->
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="content text-center">
+
+
+
+            
+            <a href="contacto.html">
+                <button  type="button" class="btn btn-outline-danger btn-lg">¡ Contactanos Ahora !</button>
+            </a>
+
+        </div>
+
+
+    </div>
+
+ 
+
+
+    <footer class="bg-dark text-center text-white">
+        <!-- fondo negro, 
+        texto centrado, texto blanco -->
+    
+        <div class="container p-4 pb-0">
+          <!-- contenedor, padding de 4 espacios,
+       padding inferior de 0 espacios 
+      -->
+    
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase text-danger">Mision</h5>
+    
+              <p>
+                Nuestra Vision es que nuestros clientes llega a su lugar de destino de manera satisfactoria, asi
+                pudiendo darles un servicio de calidad.Dandoles los mejores precios para que sean accesibles
+                para poder completar su prosito en el viaje sin preocupaciones de presupuesto.
+              </p>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase text-danger">Vision</h5>
+    
+              <p>
+                Ser líder en el mercado nacional de transporte de personal, garantizando un servicio de excelencia en
+                calidad de tiempo y seguridad, protegiendo al medio ambiente, que genere valor para nuestros clientes con
+                tecnología de punta en nuestros vehículos en materia internacional de seguridad, manteniendo a nuestros
+                clientes satisfechos para que nos consideren como su mejor proveedor.
+              </p>
+            </div>
+            <!--Grid column-->
+          </div>
+    
+    
+        </div>
+    
+        <div class="container">
+          <footer class="py-3 my-4">
+              <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                  <li class="nav-item"><a href="principal.html" class="nav-link px-2 text-white">Inicio</a></li>
+                  <li class="nav-item"><a href="Servicios.html" class="nav-link px-2 text-white">Nuestros Servicios</a></li>
+                  <li class="nav-item"><a href="contacto.html" class="nav-link px-2 text-white">Contacto</a></li>
+    
+              </ul>
+              <p class="text-center text-danger">&copy; Realizado por: Jordy, LisetH, Mayerly</p>
+    
+      </footer>
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
+    </script>
+</body>
+
+</html>
